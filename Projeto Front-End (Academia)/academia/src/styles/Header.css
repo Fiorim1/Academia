@@ -1,0 +1,48 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    background: #000c22;
+    color: #ffff;
+    font-family: "Istok Web", sans-serif;
+}
+
+.Logo {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.navList {
+    display: flex;
+}
+
+ul {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    list-style: none;
+}
+
+a {
+    color: #ffff;
+    font-family: "Istok Web", sans-serif;
+    font-weight: 400;
+}
+
+a:hover {
+    transition: 1s;
+    text-decoration: underline;
+    text-underline-offset: 1em; 
+}

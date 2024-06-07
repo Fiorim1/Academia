@@ -1,0 +1,18 @@
+.total {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.ball {
+    border: 2px solid black;
+    border-radius: 50%;
+    display: flex;
+    background: #f3f3f3;
+    margin-left: 2rem;
+}
+
+.imagem {
+    display: flex;
+    align-items: center;
+}
