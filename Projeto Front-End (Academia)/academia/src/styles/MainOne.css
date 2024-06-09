@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: 2rem;
+    align-items: center;
 }
 
 .ball {
@@ -15,4 +16,30 @@
 .imagem {
     display: flex;
     align-items: center;
+}
+
+.contentMain {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 650px;
+    margin: 0 5rem;
+    gap: 2rem;
+    font-family: "Istok Web", sans-serif;
+}
+
+.contentMain button {
+    padding: 1.15rem;
+    width: 200px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    font-family: "Istok Web", sans-serif;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.contentMain button:hover {
+    transform: scale(1.1);
 }
