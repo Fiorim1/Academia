@@ -1,0 +1,23 @@
+.mainTwo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.textMainTwo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 500px;
+    gap: 2rem;
+    margin-left: 300px;
+    margin-top: 10rem;
+    font-family: "Istok Web", sans-serif;
+}
+
+.imageMainTwo {
+    display: flex;
+    align-items: center;
+    margin-top: 10rem;
+    margin-right: 5rem;
+}

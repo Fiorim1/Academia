@@ -1,0 +1,56 @@
+.title {
+    text-align: center;
+    font-family: "Istok Web", sans-serif;
+    margin-bottom: 2rem;
+}
+
+.plans {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    align-items: center;
+}
+
+.muscle img, .cross img, .boxe img {
+    width: 250px;
+    height: 200px;
+}
+
+.muscle, .cross, .boxe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #D9D9D9;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    font-family: "Istok Web", sans-serif;
+}
+
+.muscle h4, .cross h4, .boxe h4 {
+    margin-top: 10px;
+    font-family: "Istok Web", sans-serif;
+}
+
+.muscleBtn, .crossBtn, .boxeBtn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.muscleBtn button, .crossBtn button, .boxeBtn button {
+    padding: 1.15rem;
+    width: 150px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    font-family: "Istok Web", sans-serif;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.muscleBtn button:hover, .crossBtn button:hover, .boxeBtn button:hover {
+    transform: scale(1.1);
+}
+

@@ -1,0 +1,44 @@
+.footerAll {
+    background: #000C22;
+    color: #fff;
+    font-family: "Istok Web", sans-serif;
+    display: flex;
+    margin-top: 10rem;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+.footerOne {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin: 0 15px;
+    flex-direction: column;
+
+}
+
+.footerOne img {
+    width: 80px;
+    height: 80px;
+    margin-top: 2rem;
+}
+
+.lets {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    margin-left: 300px;
+}
+
+.mediaSocial {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.facebook, .instagram, .whatsapp {
+    cursor: pointer;
+}
