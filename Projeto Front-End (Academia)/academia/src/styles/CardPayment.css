@@ -1,0 +1,73 @@
+
+.cardTotal {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.cardText, form {
+    font-family: "Istok Web", sans-serif;
+}
+
+.cardText {
+    margin: 0 auto;
+}
+
+form input {
+    padding: 1.15rem;
+    border-radius: 10px;
+    border: 1px solid #333;
+}
+
+form {
+    margin-top: 2rem;
+}
+
+.numberandname {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+
+}
+
+.valicvc {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    flex-direction: co;
+}
+
+input::placeholder {
+    text-align: center;
+    color: black;
+    z-index: 9999;
+}
+
+form button {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding: 1.15rem;
+    width: 200px;
+    justify-content: center;
+    font-family: "Istok Web", sans-serif;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+form button:hover {
+    transform: scale(1.1);
+}
+
+.card {
+    margin-top: 2rem;
+}
+
+.cancel button{
+    background: red;
+}

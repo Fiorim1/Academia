@@ -1,0 +1,118 @@
+.totalMuscle, .title h1, .pay {
+    font-family: "Istok Web", sans-serif;
+}
+
+.title {
+    margin-top: 2rem;
+}
+
+.totalMuscle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+form h2 {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 5rem;
+}
+
+form input {
+    width: 400px;
+}
+
+.sexo {
+    display: flex;
+
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.sexo {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.masc, .femi {
+    display: flex;
+    align-items: center;
+    border: 1px solid #333;
+    padding: 12px;
+    border-radius: 10px;
+    width: 400px;
+}
+
+.masc input, .femi input {
+    cursor: pointer;
+}
+
+.img {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 50px;
+}
+
+.img h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.pix, .bill {
+    display: flex;
+    align-items: center;
+    width: 120px;
+    justify-content: center;
+}
+
+.credit {
+    display: flex;
+    align-items: center;
+    width: 160px;
+    justify-content: center;
+}
+
+.pix svg, .credit svg, .bill svg {
+    width: 30px;
+    height: 30px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.pix button, .credit button, .bill button {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding: 1.15rem;
+    width: 200px;
+    justify-content: center;
+    font-family: "Istok Web", sans-serif;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    align-items: center;
+    gap: 10px;
+}
+
+.pix button:hover, .credit button:hover, .bill button:hover {
+    transform: scale(1.1);
+}
