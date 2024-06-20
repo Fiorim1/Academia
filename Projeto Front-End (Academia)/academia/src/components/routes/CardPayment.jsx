@@ -4,9 +4,22 @@ import "react-credit-cards-2/dist/es/styles-compiled.css";
 import Header from "../../components/Header"
 import "../../styles/CardPayment.css"
 import { useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 
 const CardPayment = () => {
+
+
+  const navigate = useNavigate()
+  function stopShop() {
+    alert("COMPRA CANCELADA :(")
+    navigate("/")
+  }
+
+  function pageMuscle() {
+    alert("Compra Concluída!!")
+    navigate("/pagemuscle")
+  }
 
   const location = useLocation();
   const receivedState = location.state;
@@ -88,9 +101,9 @@ const CardPayment = () => {
               required
             />
           </div>
-          <button>Conclui Compra</button>
+          <button type="button" onClick={pageMuscle}>Conclui Compra</button>
           <div className="cancel">
-            <button>Cancelar Comprar</button>
+            <button type="button" onClick={stopShop}>Cancelar Comprar</button>
           </div>
         </form>
       </div>
