@@ -42,3 +42,7 @@
 .facebook, .instagram, .whatsapp {
     cursor: pointer;
 }
+
+.lets h1 {
+    font-family: "Permanent Marker", cursive;
+}
