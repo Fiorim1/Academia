@@ -1,0 +1,7 @@
+.callPersonal {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    flex-direction: column;
+    align-items: center;
+}

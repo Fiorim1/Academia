@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    background: #000c22;
+    color: #ffff;
+    font-family: "Istok Web", sans-serif;
+}
+.Logo {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.navList {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navList button {
+    padding: 1.15rem;
+    width: 100px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    font-family: "Istok Web", sans-serif;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background: #D9d9d9;
+}
+
+.navList button:hover {
+    transform: scale(1.1);
+}
+
+.navList h1 {
+    font-family: "Permanent Marker", cursive;
+}
+    

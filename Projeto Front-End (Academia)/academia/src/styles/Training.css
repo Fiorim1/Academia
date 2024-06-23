@@ -1,0 +1,45 @@
+.trainingTableContainer {
+    width: 80%;
+    margin: 20px auto;
+  }
+  
+  .trainingTable {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+  }
+  
+  .trainingTable th, .trainingTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .trainingTable th {
+    background-color: #f2f2f2;
+  }
+  
+  .trainingTable td[contentEditable=true]:focus {
+    outline: 1px solid blue;
+  }
+
+  .back {
+    display: flex;
+    justify-content: center;
+  }
+
+  .back button {
+    padding: 1.15rem;
+    width: 200px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    font-family: "Istok Web", sans-serif;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .back button:hover {
+    transform: scale(1.1);
+}

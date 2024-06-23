@@ -1,0 +1,30 @@
+.noticies {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.carousel {
+    width: 600px; /* Largura das imagens */
+    height: 300px; /* Altura das imagens */
+    overflow: hidden; /* Para ocultar as imagens que não estão visíveis */
+    position: relative; /* Para permitir posicionamento absoluto das imagens */
+  }
+  
+  .carousel img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out; /* Transição suave de opacidade */
+    border-radius: 12px;
+  }
+  
+  .carousel img.active {
+    opacity: 1;
+  }
+  
