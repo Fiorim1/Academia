@@ -1,61 +1,50 @@
-import { FaUser, FaLock } from "react-icons/fa";
+import { useState } from "react"
+import logoMuscle from "../../assets/Logo.png"
+import "../../styles/Register.css"
+import Header from "../Header"
+import Footer from "../Footer"
+import { useNavigate } from "react-router-dom"
 
-import { useState } from "react";
-    
-import "./Registro.css"
+const Register = () => {
+  const navigate = useNavigate();
+  function goToLogin() {
+    navigate("/login");
+  }
 
-
-const Cadastro = () => {
-    const[username, setUsername]=useState("");
-    const[senha, setSenha]=useState("");
-
-    const handleSubmit= (event) => {
-        event.preventDefault();
-
-        console.log("teste", username, senha)
-
-        console.log("Envio");
-    };
-
+  function goToLoginWithAlert() {
+    alert("Conta Criada Com Sucesso!!")
+    navigate("/login");
+  }
   return (
-    <div className="container">
-        <form onSubmit={handleSubmit}>
-            <h1>Digite o email</h1>           
-                <div>
-                    <input 
-                        type="email"
-                        placeholder="E-mail"
-                        onChange={(e) => setUsername(e.target.value)}
-                    />
-                    <FaUser className="icon"/>
-                </div>
-                <div>
-                    <input 
-                        type="senha"
-                        placeholder="Senha" 
-                        onChange={(e) => setSenha(e.target.value)}
-                    />
-                    <FaLock className="icon"/>
-                </div>     
-
-                <div className="recall-forget">
-                    <label>
-                        <input type="checkbox"/>
-                        Lembre de mim
-                    </label>
-                    <a href="#">Esqueci minha senha.</a>
-                </div>
-
-                <button>Cadastrar</button> 
-
-                <div className="login-link"> 
-                    <p>
-                        Já possui uma conta? <a href="#">Login</a>
-                    </p>
-                </div>    
-        </form>
+    <div className="contentAllLogin">
+      <Header />
+      <div className="register">
+        <div className="logo">
+          <img src={logoMuscle} alt="" />
+        </div>
+        <div className="titlePrincipal">
+          <h1>FITNESS CLUB</h1>
+        </div>
+        <div className="title">
+          <h2>REGISTRE-SE</h2>
+        </div>
+        <div className="inputsRegister">
+          <form>
+            <input type="text" placeholder="NOME COMPLETO"/>
+            <input type="text" placeholder="CPF" />
+            <input type="password" placeholder="SENHA" />
+          </form>
+          <div className="buttonFortgotPasswordRegister">
+            <button type="button" onClick={goToLogin}>Caso Possua Conta.. Crie Aqui!</button>
+          </div>
+        </div>
+        <div className="joinRegister">
+          <button type="button" onClick={goToLoginWithAlert}>Criar Conta</button>
+        </div>
+      </div>
+      <Footer />
     </div>
-  );
-};
+  )
+}
 
-export default Cadastro;
+export default Register
