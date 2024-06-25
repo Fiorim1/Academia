@@ -1,22 +1,48 @@
-import "../styles/login.css"
+import { useState } from "react"
+import logoMuscle from "../../assets/Logo.png"
+import "../../styles/Login.css"
+import Header from "../Header"
+import Footer from "../Footer"
+import { useNavigate } from "react-router-dom"
 
-function Login() {
-    return (
-      <div className="login-container">
-        <h2>Login</h2>
-        <form>
-          <div className="form-group">
-            <label htmlFor="username">Username:</label>
-            <input type="text" id="username" name="username" required />
-          </div>
-          <div className="form-group">
-            <label htmlFor="password">Password:</label>
-            <input type="password" id="password" name="password" required />
-          </div>
-          <button type="submit">Login</button>
-        </form>
-      </div>
-    );
+const Login = () => {
+  const navigate = useNavigate();
+  function goToForgotPasswordLogin() {
+    navigate("/forgotpassword");
   }
-  
-  export default Login;
+  function goToRegister() {
+    navigate("/register");
+  }
+  return (
+    <div className="contentAllLogin">
+      <Header />
+      <div className="login">
+        <div className="logo">
+          <img src={logoMuscle} alt="" />
+        </div>
+        <div className="titlePrincipal">
+          <h1>FITNESS CLUB</h1>
+        </div>
+        <div className="title">
+          <h2>LOGIN</h2>
+        </div>
+        <div className="inputsLogin">
+          <form>
+            <input type="text" placeholder="CPF" />
+            <input type="password" placeholder="SENHA" />
+          </form>
+          <div className="buttonFortgotPasswordLogin">
+            <button type="button" onClick={goToForgotPasswordLogin}>Esqueceu a Senha?</button>
+            <button type="button" onClick={goToRegister}>Caso Não Possua Conta.. Crie Aqui!</button>
+          </div>
+        </div>
+        <div className="joinLogin">
+          <button>Entrar</button>
+        </div>
+      </div>
+      <Footer />
+    </div>
+  )
+}
+
+export default Login
