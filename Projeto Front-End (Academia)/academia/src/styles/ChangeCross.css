@@ -1,0 +1,23 @@
+.buttonChange button{
+    padding: 1.15rem;
+    width: 200px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    font-family: "Istok Web", sans-serif;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.buttonChange {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.buttonChange button:hover {
+    transform: scale(1.1);
+}

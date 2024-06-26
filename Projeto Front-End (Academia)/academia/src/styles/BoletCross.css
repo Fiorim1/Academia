@@ -1,0 +1,69 @@
+.boletCross {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.boletImg img{
+    width: 400px;
+    height: 300px;
+}
+
+.boletImg {
+    margin-top: 2rem;
+    border: 1px solid #333;
+    padding: 1.5rem;
+    border-radius: 12px;
+}
+
+.barBolet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #d9d9d9;
+    padding: 1.5rem;
+    border-radius: 12px;
+}
+
+
+
+.barBolet button {
+    background: none;
+    cursor: pointer;
+    padding: 2px;
+    border: none;
+}
+
+.buttonExit button {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding: 1.15rem;
+    width: 200px;
+    justify-content: center;
+    font-family: "Istok Web", sans-serif;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+.buttonExit button:hover, .shopOk button:hover {
+    transform: scale(1.1);
+}
+
+.shopOk button {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding: 1.15rem;
+    width: 200px;
+    justify-content: center;
+    font-family: "Istok Web", sans-serif;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}

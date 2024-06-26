@@ -1,0 +1,84 @@
+* {
+    font-family: "Istok Web", sans-serif;
+}
+
+.perfil {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.buttonExit {
+    display: flex;
+    justify-content: center;
+}
+
+.buttonExit button {
+    padding: 0.5rem;
+    width: 100px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    font-family: "Istok Web", sans-serif;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background: red;
+}
+
+.online {
+    display: flex;
+    gap: 1rem;
+}
+
+.trainingType {
+    margin-left: 1.5rem;
+    display: flex;
+}
+
+.ballGreen {
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    border-radius: 50%;
+    animation: piscar 1s infinite alternate; /* Define a animação de piscar */
+    margin-left: 1.5rem;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.imgPerfil img{
+    border-radius: 50%;
+}
+
+@keyframes piscar {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.2;
+    }
+}
+
+.date {
+    margin-left: 1.5rem;
+    font-weight: 600;
+}
+
+.hour {
+    font-weight: 600;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    gap: 0.5rem;
+}
+

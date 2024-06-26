@@ -1,0 +1,43 @@
+.pixTotal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+img {
+    border-radius: 70px;
+}
+
+.buttonExit button {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding: 1.15rem;
+    width: 200px;
+    justify-content: center;
+    font-family: "Istok Web", sans-serif;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+.buttonExit button:hover, .shopOk button:hover {
+    transform: scale(1.1);
+}
+
+.shopOk button {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding: 1.15rem;
+    width: 200px;
+    justify-content: center;
+    font-family: "Istok Web", sans-serif;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
