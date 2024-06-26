@@ -1,10 +1,10 @@
 import Header from "../Header"
 import Footer from "../Footer"
 import Pix from "../../assets/pix.png"
-import "../../styles/PixMuscle.css"
+import "../../styles/PixBoxe.css"
 import { useNavigate } from "react-router-dom"
 
-function PixMuscle() {
+const PixBoxe = () => {
     const navigate = useNavigate()
     function stopShop() {
       alert("COMPRA CANCELADA :(")
@@ -39,4 +39,4 @@ function PixMuscle() {
     )
 }
 
-export default PixMuscle
+export default PixBoxe
