@@ -1,4 +1,6 @@
 import "../styles/Header.css"
+import "../fonts/fontsheaderandfooter.css"
+
 
 function Header() {
     return (
@@ -9,11 +11,7 @@ function Header() {
                     <h1>FITNESS CLUB</h1>
                 </div>
                 <div className="navList">
-                    <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href=""Abour>About</a></li>
-                        <li><a href="">Login</a></li>
-                    </ul>
+                <h1>#VEMPRAFITNESS</h1>
                 </div>
             </nav>
         </div>
