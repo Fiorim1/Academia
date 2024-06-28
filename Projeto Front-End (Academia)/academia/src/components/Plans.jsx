@@ -1,6 +1,18 @@
 import "../styles/Plans.css"
+import { useNavigate } from "react-router-dom";
 
 function Plans() {
+
+    const navigate = useNavigate();
+    function goMuscle() {
+        navigate("/paymuscle")
+    }
+    function goCross() {
+        navigate("/paycross")
+    }
+    function goBoxe() {
+        navigate("/payboxe")
+    }
     return (
         <div>
             <div className="title">
@@ -12,7 +24,7 @@ function Plans() {
                         <img src="../../src/assets/muscle.png" alt="" />
                         <h4>MUSCULAÇÂO</h4>
                     </div>
-                    <button>ASSINAR</button>
+                    <button type="button" onClick={goMuscle}>ASSINAR</button>
                 </div>
 
                 <div className="crossBtn">
@@ -20,7 +32,7 @@ function Plans() {
                         <img src="../../src/assets/cross.png" alt="" />
                         <h4>CROSSFIT</h4>
                     </div>
-                    <button>ASSINAR</button>
+                    <button type="button" onClick={goCross}>ASSINAR</button>
                 </div>
 
                 <div className="boxeBtn">
@@ -28,7 +40,7 @@ function Plans() {
                         <img src="../../src/assets/boxe.png" alt="" />
                         <h4>BOXE</h4>
                     </div>
-                    <button>ASSINAR</button>
+                    <button type="button" onClick={goBoxe}>ASSINAR</button>
                 </div>
             </div>
         </div>
