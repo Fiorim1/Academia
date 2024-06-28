@@ -11,6 +11,24 @@
     margin-right: 2rem;
 }
 
+.buttonExit {
+    display: flex;
+    justify-content: center;
+}
+
+.buttonExit button {
+    padding: 0.5rem;
+    width: 100px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    font-family: "Istok Web", sans-serif;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background: red;
+}
+
 .online {
     display: flex;
     gap: 1rem;
