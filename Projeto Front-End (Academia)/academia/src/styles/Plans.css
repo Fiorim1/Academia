@@ -14,6 +14,7 @@
 .muscle img, .cross img, .boxe img {
     width: 250px;
     height: 200px;
+    border-radius: 0;
 }
 
 .muscle, .cross, .boxe {
